@@ -4,3 +4,13 @@ python-dotenv
 streamlit
 langchain_community
 langserve  
+pypdf
+faiss-cpu
+pymongo
+bcypt
+
+"""flask
+pymongo
+openai
+flask_cors
+pymongo""" 
