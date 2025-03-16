@@ -41,3 +41,27 @@ MemoryBot is an AI-driven chatbot designed to **store, retrieve, and analyze con
 ```bash
 git clone https://github.com/your-username/MemoryBot.git
 cd MemoryBot
+
+### **2️⃣ Install Dependencies**
+```bash
+pip install -r requirements.txt
+
+### **3️⃣ Set Up Environment Variables**
+OPENAI_API_KEY=your_openai_api_key
+MONGODB_URI=mongodb://localhost:27017/
+ADMIN_USERNAME=
+ADMIN_PASSWORD=
+
+
+### **4️⃣ Start MongoDB**
+mongod --dbpath /path-to-your-data-directory
+
+## 🛠 Code Workflow
+1️⃣ User Authentication – Verifies login credentials and session state
+2️⃣ Chat Memory Initialization – Loads conversation history from MongoDB
+3️⃣ PDF Processing – Extracts text and converts it into FAISS embeddings
+4️⃣ Conversational Logic – Uses LangChain and OpenAI’s GPT models for responses
+5️⃣ Admin Controls – Monitors user activities and updates prompt limits
+
+
+
